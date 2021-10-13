@@ -21,10 +21,10 @@ void MaxHeapify(int a[],int n,int i)
     int r=Right(i);
     int largest;
 
-    if(l<=n && a[l]>a[i]){largest=l;}
+    if(l<n && a[l]>a[i]){largest=l;}
     else largest=i;
 
-    if(r<=n && a[r]>a[largest]){largest=r;}
+    if(r<n && a[r]>a[largest]){largest=r;}
 
     if(largest!=i)
     {
